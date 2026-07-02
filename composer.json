@@ -1,5 +1,5 @@
 {
-    "name": "hydra/event",
+    "name": "hydrakit/event",
     "description": "PSR-14 event dispatcher for Hydra PHP framework",
     "type": "library",
     "license": "MIT",
@@ -24,7 +24,7 @@
     ],
     "require": {
         "php": ">=8.2",
-        "hydra/core": "*",
+        "hydrakit/core": "*",
         "psr/event-dispatcher": "^1.0"
     },
     "require-dev": {

@@ -12,8 +12,8 @@ use Psr\EventDispatcher\ListenerProviderInterface;
 /**
  * Wires the event system into an application.
  *
- * Like hydra/session and hydra/auth (and unlike the stateless hydra/validation /
- * hydra/csrf), this package binds interfaces to defaults and — crucially — needs
+ * Like hydrakit/session and hydrakit/auth (and unlike the stateless hydrakit/validation /
+ * hydrakit/csrf), this package binds interfaces to defaults and — crucially — needs
  * a SHARED listener registry, so it earns a provider and ships its own.
  *
  * The one thing to get right is that a single {@see ListenerProvider} instance

@@ -64,4 +64,4 @@ $this->events->dispatch(new OrderPlaced($order->id));
 
 A subsystem that wants to stay usable without the event package should depend on a
 nullable `?EventDispatcherInterface` and dispatch with `?->` — exactly what
-`hydra/auth` does.
+`hydrakit/auth` does.
