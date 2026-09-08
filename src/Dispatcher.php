@@ -9,18 +9,10 @@ use Psr\EventDispatcher\ListenerProviderInterface;
 use Psr\EventDispatcher\StoppableEventInterface;
 
 /**
+ * Dispatcher
+ *
  * The read side of the event system: hand it an event object and it calls every
- * listener the provider matched, in order.
- *
- * A pure PSR-14 dispatcher — events are plain objects (no name strings, no magic),
- * listeners are callables. The event itself is the payload and, when mutable, the
- * channel a listener uses to pass information back: {@see dispatch()} returns the
- * same object it was given so a caller can read what listeners left on it.
- *
- * Propagation control is opt-in: an event that implements
- * {@see StoppableEventInterface} is checked before each listener, so a listener
- * can halt the chain (the standard use is a "handled" flag). Events that don't
- * implement it always run every listener.
+ * listener the provider matched, in order
  */
 final class Dispatcher implements EventDispatcherInterface
 {
